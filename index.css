@@ -1,0 +1,103 @@
+:root {
+  --wine-red: #C7375F;
+  --bright-red: #D42D2F;
+  --dark-green: #344D2F;
+  --light-green: #77A047;
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+}
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/happyholidays.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mountains of Christmas', cursive;}
+
+.greeting-container {
+    background: var(--snow);
+    min-height: 30vh;
+    border-radius: 5px;
+    padding: 20px;
+    opacity: .9;
+    position: relative;
+}
+.main-header {
+    color: var(--dark-green);
+    font-size: 30px;
+    
+    
+}
+.card {
+    /* min-height: 20vh; */
+    /* width: 300px;
+    height: 300px; */
+    border-radius: 5px;
+    background: var(--snow);
+    font-size: 35px;    
+    text-align: center;
+    padding: 0 0.5em;
+    /* position: relative; */
+    margin-bottom: 1em;
+    opacity: .9;
+    box-shadow: 2px 2px 20px var(--snow);
+}
+
+p {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   font-weight: 700;
+   transform: translate(-50%, -50%);
+}
+
+button {
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    background: var(--light-green);
+    color: var(--snow);
+    box-shadow: 2px 2px 20px var(--gold);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    margin: 10px auto;
+    font-family: inherit;
+
+}
+
+button:hover,
+button:focus
+ {
+    outline: none;
+    cursor: pointer;
+
+}
+.btn-remove {
+    background: var(--bright-red);
+    box-shadow: 2px 2px 20px var(--gold);
+
+    
+}
+
+.input-box {
+    width: 100%;
+    font-family: inherit;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 20px var(--snow);
+}
+.input-box:focus {
+    border: 4px dashed var(--bright-red);
+    outline: none;
+}
